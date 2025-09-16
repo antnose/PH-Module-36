@@ -1,5 +1,6 @@
 import Actor from "./Actor";
 import "./App.css";
+import Library from "./Library";
 import Singer from "./Singer";
 import Todo from "./Todo";
 
@@ -65,9 +66,38 @@ function App() {
     },
   ];
 
+  const books = [
+    {
+      id: 1,
+      name: "Physics",
+      price: 250,
+    },
+    {
+      id: 2,
+      name: "Mathematics",
+      price: 300,
+    },
+    {
+      id: 3,
+      name: "Chemistry",
+      price: 275,
+    },
+    {
+      id: 4,
+      name: "Biology",
+      price: 260,
+    },
+    {
+      id: 5,
+      name: "Computer Science",
+      price: 320,
+    },
+  ];
+
   return (
     <>
-      <h1>React Core Concepts</h1>
+      <Library books={books} />
+
       {/* {actors.map((actor) => (
         <Actor actor={actor} />
       ))} */}
